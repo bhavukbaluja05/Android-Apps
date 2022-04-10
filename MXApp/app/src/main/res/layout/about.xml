@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    tools:context=".About"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ceoimg"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        >
+
+            <ImageView
+                android:layout_width="190dp"
+                android:layout_height="200dp"
+                android:background="@drawable/mxceo"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="CEO"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="200dp"
+                android:textStyle="bold"
+                android:textAppearance="?attr/textAppearanceHeadline6" />
+    </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ceoimg"
+                android:text="Karan is responsible for defining the strategic direction and leading teams across all businesses and functions including OTT, gaming, content, technology, product, revenue and marketing."
+                android:textSize="20sp"
+                android:layout_marginLeft="40dp"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cooimg"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="20dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+
+                <ImageView
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/mxcoo"
+                    android:scaleType="center"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="COO"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="200dp"
+                    android:textStyle="bold"
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cooimg"
+                android:text="Nikhil is responsible for taking the MX platforms to their next phase of growth by expanding their geographical reach, driving innovation and maximizing impact for all stakeholders."
+                android:textSize="20sp"
+                android:layout_marginLeft="40dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
